@@ -1,0 +1,24 @@
+{
+    "name": "vendor/contact-form",
+    "version": "1.0.0",
+    "description": "Contact Form Package with Admin Dashboard and Queued Notifications",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Vendor\\ContactForm\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Vendor\\ContactForm\\ContactFormServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "php": "^8.0",
+        "illuminate/support": "^12.0",
+        "tymon/jwt-auth": "^2.0"
+    }
+}
