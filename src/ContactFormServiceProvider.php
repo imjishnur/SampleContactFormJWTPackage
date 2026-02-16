@@ -27,6 +27,10 @@ class ContactFormServiceProvider extends ServiceProvider
             $this->publishes([
                 __DIR__ . '/resources/views' => resource_path('views/vendor/contact-form'),
             ], 'views');
+
+            $this->publishes([
+                __DIR__ . '/database/seeders/ContactFormSeeder.php' => database_path('seeders/ContactFormSeeder.php'),
+            ], 'seeders');
         }
     }
 
